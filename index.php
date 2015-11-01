@@ -668,6 +668,9 @@
 		<script src="lib/plugins/jquery.scrollTo.js"></script>
 		<script src="lib/plugins/jquery.slimscroll.js"></script>
 		<script src="lib/plugins/jquery.nicescroll.js"></script>
+		<!--[if lte IE 8]>
+		<script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script>
+		<![endif]-->
 		<!-- CORE -->
 		<script src="lib/jquery.gdb.js"></script>
 		<!--<script src="lib/jquery.ui.js"></script>-->
