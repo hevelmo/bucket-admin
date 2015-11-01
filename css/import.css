@@ -1,0 +1,75 @@
+/* ################################################################################################### *\
+
+	Template Name: BucketAdmin
+	Dashboard build with Bootstrap v3.0.3
+	Template Version: 1.0
+	Author: ThemeBucket
+	Update: hevelmo
+
+	CONTENT
+
+		[styles] google apis font
+		[styles] bootstrap
+		[styles] jquery-ui
+		[styles] maps
+		[styles] calendar
+		[styles] clock style
+		[styles] morris chart style
+		[styles] custom style
+		[styles] responsive style
+		[styles] webfonts
+		[styles] main
+
+\* ################################################################################################### */
+	/* ------------------------------------------------------ *\
+		[styles] google apis font
+	\* ------------------------------------------------------ */
+		@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic);
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+		@import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+	/* ------------------------------------------------------ *\
+		[styles] bootstrap
+	\* ------------------------------------------------------ */
+		@import url(styles/bootstrap.css);
+		@import url(styles/bootstrap-reset.css);
+	/* ------------------------------------------------------ *\
+		[styles] jquery-ui
+	\* ------------------------------------------------------ */
+		@import url(styles/jquery-ui-1.10.1.custom.css);
+	/* ------------------------------------------------------ *\
+		[styles] maps
+	\* ------------------------------------------------------ */
+		@import url(styles/jquery-jvectormap-1.2.2.css);
+	/* ------------------------------------------------------ *\
+		[styles] calendar
+	\* ------------------------------------------------------ */
+		@import url(styles/bucket.calendar.css);
+	/* ------------------------------------------------------ *\
+		[styles] clock style
+	\* ------------------------------------------------------ */
+		@import url(styles/bucket.css3clock.css);
+	/* ------------------------------------------------------ *\
+		[styles] morris chart style
+	\* ------------------------------------------------------ */
+		@import url(styles/morris.css);
+	/* ------------------------------------------------------ *\
+		[styles] custom style
+	\* ------------------------------------------------------ */
+		@import url(styles/bucket.css);
+	/* ------------------------------------------------------ *\
+		[styles] responsive style
+	\* ------------------------------------------------------ */
+		@import url(styles/bucket.responsive.css);
+	/* ------------------------------------------------------ *\
+		[styles] webfonts
+	\* ------------------------------------------------------ */
+		@import url(webfont/font-awesome.css);
+		@import url(webfont/bucket-ico-fonts.css);
+		@import url(webfont/glyphicons.css);
+	/* ------------------------------------------------------ *\
+		[styles] main
+	\* ------------------------------------------------------ */
+		@import url(styles/bucket.main.css);
+/* ################################################################################################### *\
+	END CONTENT
+\* ################################################################################################### */

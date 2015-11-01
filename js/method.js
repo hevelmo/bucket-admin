@@ -62,15 +62,155 @@
         docHead:document.getElementsByTagName("head")[0]
     }
 /* ------------------------------------------------------ *\
- [Methods] Home
+    [Methods] initMethods
 \* ------------------------------------------------------ */
-    //This group of methods will be not used it's only example, remove it later
-    var demoMethods = {
-        changeLan : function (event) {
-            var lan, date, newDate;
-            lan = PRO.getValue($(this));
-            date = $(domEl.h3_demo_date).data('date');
-            newDate = PRO.momentToRoman(date, lan);
-            $(domEl.h3_demo_date).text(newDate);
+    var initMethods = {
+        init : function () {
+            dcAccordionMethod.fn_dcAccordion();
+            sliScrollMethod.fn_slimScroll();
+            naceScrollMethod.fn_niceScroll();
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] dcAccordionMethod
+\* ------------------------------------------------------ */
+    var dcAccordionMethod = {
+        fn_dcAccordion : function() {
+            /*==Left Navigation Accordion ==*/
+            if ($.fn.dcAccordion) {
+                $('#nav-accordion').dcAccordion({
+                    eventType: 'click',
+                    autoClose: true,
+                    saveState: true,
+                    disableLink: true,
+                    speed: 'slow',
+                    showCount: false,
+                    autoExpand: true,
+                    classExpand: 'dcjq-current-parent'
+                });
+            }
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] slim Scroll
+\* ------------------------------------------------------ */
+    var sliScrollMethod = {
+        fn_slimScroll :function () {
+            /*==Slim Scroll ==*/
+            if ($.fn.slimScroll) {
+                $('.event-list').slimscroll({
+                    height: '305px',
+                    wheelStep: 20
+                });
+                $('.conversation-list').slimscroll({
+                    height: '360px',
+                    wheelStep: 35
+                });
+                $('.to-do-list').slimscroll({
+                    height: '300px',
+                    wheelStep: 35
+                });
+            }
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] nice Scroll
+\* ------------------------------------------------------ */
+    var naceScrollMethod = {
+        fn_niceScroll : function () {
+            /*==Nice Scroll ==*/
+            if ($.fn.niceScroll) {
+                $(".leftside-navigation").niceScroll({
+                    cursorcolor: "#1FB5AD",
+                    cursorborder: "0px solid #fff",
+                    cursorborderradius: "0px",
+                    cursorwidth: "3px"
+                });
+
+                $(".leftside-navigation").getNiceScroll().resize();
+                if ($('#sidebar').hasClass('hide-left-bar')) {
+                    $(".leftside-navigation").getNiceScroll().hide();
+                }
+                $(".leftside-navigation").getNiceScroll().show();
+
+                $(".right-stat-bar").niceScroll({
+                    cursorcolor: "#1FB5AD",
+                    cursorborder: "0px solid #fff",
+                    cursorborderradius: "0px",
+                    cursorwidth: "3px"
+                });
+            }
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] sidebarToggleMethod
+\* ------------------------------------------------------ */
+    var sidebarToggleMethod = {
+        sidebarToggle : function(event) {
+            var o = ($(this).offset());
+            var diff = 80 - o.top;
+            if (diff > 0)
+                $(".leftside-navigation").scrollTo("-=" + Math.abs(diff), 500);
+            else
+                $(".leftside-navigation").scrollTo("+=" + Math.abs(diff), 500);
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] sidebarToggleBoxMethod
+\* ------------------------------------------------------ */
+    var sidebarToggleBoxMethod = {
+        sidebarToggleBox : function(event) {
+            $(".leftside-navigation").niceScroll({
+                cursorcolor: "#1FB5AD",
+                cursorborder: "0px solid #fff",
+                cursorborderradius: "0px",
+                cursorwidth: "3px"
+            });
+
+            $('#sidebar').toggleClass('hide-left-bar');
+            if ($('#sidebar').hasClass('hide-left-bar')) {
+                $(".leftside-navigation").getNiceScroll().hide();
+            }
+            $(".leftside-navigation").getNiceScroll().show();
+            $('#main-content').toggleClass('merge-left');
+            event.stopPropagation();
+            if ($('#container').hasClass('open-right-panel')) {
+                $('#container').removeClass('open-right-panel')
+            }
+            if ($('.right-sidebar').hasClass('open-right-bar')) {
+                $('.right-sidebar').removeClass('open-right-bar')
+            }
+
+            if ($('.header').hasClass('merge-header')) {
+                $('.header').removeClass('merge-header')
+            }
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] toggleRightBoxMethod
+\* ------------------------------------------------------ */
+    var toggleRightBoxMethod = {
+        toggleRightBox : function(event) {
+            $('#container').toggleClass('open-right-panel');
+            $('.right-sidebar').toggleClass('open-right-bar');
+            $('.header').toggleClass('merge-header');
+            event.stopPropagation()
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] evenHastMethod
+\* ------------------------------------------------------ */
+    var evenHastMethod = {
+        evenHas : function(event) {
+            if ($('#container').hasClass('open-right-panel')) {
+                $('#container').removeClass('open-right-panel')
+            }
+            if ($('.right-sidebar').hasClass('open-right-bar')) {
+                $('.right-sidebar').removeClass('open-right-bar')
+            }
+
+            if ($('.header').hasClass('merge-header')) {
+                $('.header').removeClass('merge-header')
+            }
         }
     }

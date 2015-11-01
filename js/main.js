@@ -29,8 +29,10 @@ $(document).ready(function() {
         EVENT CONTROL
     \* ------------------------------------------------------ */
 
-    /* ------------------------------------------------------ *\
-     [Methods] DEMO'
-    \* ------------------------------------------------------ */
-    $(domEl.div_recurrent).on('change', domEl.select_lan_demo, demoMethods.changeLan);
+        $(domEl.recurrent_body).on('click', '.sidebar-toggle-box .fa-bars', sidebarToggleBoxMethod.sidebarToggleBox);
+        $(domEl.recurrent_body).on('click', '.toggle-right-box .fa-bars', toggleRightBoxMethod.toggleRightBox);
+        $(domEl.recurrent_body).on('click', '.header,#main-content,#sidebar', evenHastMethod.evenHas);
+
+        /*==Sidebar Toggle==*/
+        $(domEl.recurrent_body).on('click', ".leftside-navigation .sub-menu > a", sidebarToggleMethod.sidebarToggle);
 });
