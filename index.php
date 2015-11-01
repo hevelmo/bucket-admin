@@ -666,12 +666,18 @@
 		<!-- PLUGINS -->
 		<script src="lib/plugins/jquery-ui/jquery-ui-1.10.1.custom.js"></script>
 		<script src="lib/plugins/jquery.dcjqaccordion.2.7.js"></script>
-		<script src="lib/plugins/jquery.scrollTo.js"></script>
+		<script src="lib/plugins/jquery.scrollTo-v1.4.6.js"></script>
 		<script src="lib/plugins/jquery.slimscroll.js"></script>
 		<script src="lib/plugins/jquery.nicescroll.js"></script>
 		<!--[if lte IE 8]>
 		<script language="javascript" type="text/javascript" src="lib/excanvas.js"></script>
 		<![endif]-->
+		<script src="lib/plugins/skycons.js"></script>
+		<script src="lib/plugins/jquery.scrollTo-v1.4.8.js"></script>
+		<script src="lib/plugins/jquery.easing.1.3.js"></script>
+		<script src="lib/plugins/jquery.easing.1.3.js"></script>
+
+
 		<!-- CORE -->
 		<script src="lib/jquery.gdb.js"></script>
 		<!--<script src="lib/jquery.ui.js"></script>-->
