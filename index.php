@@ -677,7 +677,7 @@
 		<!-- TEMPLATES -->
 		<script src='templates/min/templates.min.js'></script>
 		<!-- PLUGINS -->
-		<script src="lib/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>
+		<script src="lib/plugins/jquery-ui/jquery-ui-1.10.1.custom.js"></script>
 		<script src="lib/plugins/jquery.dcjqaccordion.2.7.js"></script>
 		<script src="lib/plugins/jquery.scrollTo.js"></script>
 		<script src="lib/plugins/jquery.slimscroll.js"></script>
