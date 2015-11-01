@@ -662,9 +662,15 @@
 		<script src="lib/jquery.js"></script>
 		<script src="lib/modernizr.js"></script>
 		<script src="lib/bootstrap.js"></script>
+		<!-- PLUGINS -->
+		<script src="lib/plugins/jquery-ui/jquery-ui-1.10.1.custom.js"></script>
+		<script src="lib/plugins/jquery.dcjqaccordion.2.7.js"></script>
+		<script src="lib/plugins/jquery.scrollTo.js"></script>
+		<script src="lib/plugins/jquery.slimscroll.js"></script>
+		<script src="lib/plugins/jquery.nicescroll.js"></script>
 		<!-- CORE -->
 		<script src="lib/jquery.gdb.js"></script>
-		<script src="lib/jquery.ui.js"></script>
+		<!--<script src="lib/jquery.ui.js"></script>-->
 		<script src="lib/underscore.js"></script>
 		<script src="lib/moment.js"></script>
 		<script src="lib/accounting.js"></script>
@@ -676,12 +682,6 @@
 		<script src="lib/sha512.js"></script>
 		<!-- TEMPLATES -->
 		<script src='templates/min/templates.min.js'></script>
-		<!-- PLUGINS -->
-		<script src="lib/plugins/jquery-ui/jquery-ui-1.10.1.custom.js"></script>
-		<script src="lib/plugins/jquery.dcjqaccordion.2.7.js"></script>
-		<script src="lib/plugins/jquery.scrollTo.js"></script>
-		<script src="lib/plugins/jquery.slimscroll.js"></script>
-		<script src="lib/plugins/jquery.nicescroll.js"></script>
 		<!-- CORE -->
 	    <script src='js/objects.js'></script>
 	    <script src='js/method.js'></script>
