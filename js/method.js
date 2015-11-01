@@ -33,7 +33,7 @@
 \* ------------------------------------------------------ */
     var favicon = {
         load_favicon: function() {
-            favicon.change("../resources/public/img/PROcaricon.ico");
+            favicon.change("img/icon/favicon.ico");
         },
         change: function(iconURL, optionalDocTitle) {
             if (arguments.length == 2) {
@@ -68,7 +68,7 @@
         init : function () {
             dcAccordionMethod.fn_dcAccordion();
             sliScrollMethod.fn_slimScroll();
-            naceScrollMethod.fn_niceScroll();
+            niceScrollMethod.fn_niceScroll();
         }
     }
 /* ------------------------------------------------------ *\
@@ -116,7 +116,7 @@
 /* ------------------------------------------------------ *\
     [Methods] nice Scroll
 \* ------------------------------------------------------ */
-    var naceScrollMethod = {
+    var niceScrollMethod = {
         fn_niceScroll : function () {
             /*==Nice Scroll ==*/
             if ($.fn.niceScroll) {
@@ -194,6 +194,7 @@
             $('#container').toggleClass('open-right-panel');
             $('.right-sidebar').toggleClass('open-right-bar');
             $('.header').toggleClass('merge-header');
+            $('#main-content').toggleClass('recurrent_section');
             event.stopPropagation()
         }
     }
@@ -227,6 +228,10 @@
             }
             if ($('.right-sidebar').hasClass('open-right-bar')) {
                 $('.right-sidebar').removeClass('open-right-bar')
+            }
+
+            if ($('#main-content').hasClass('recurrent_section')) {
+                $('#main-content').removeClass('recurrent_section')
             }
 
             if ($('.header').hasClass('merge-header')) {

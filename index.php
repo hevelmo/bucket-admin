@@ -675,7 +675,7 @@
 		<script src="lib/plugins/skycons.js"></script>
 		<script src="lib/plugins/jquery.scrollTo-v1.4.8.js"></script>
 		<script src="lib/plugins/jquery.easing.1.3.js"></script>
-		<script src="lib/plugins/jquery.easing.1.3.js"></script>
+		<script src="lib/plugins/clndr.js"></script>
 
 
 		<!-- CORE -->
