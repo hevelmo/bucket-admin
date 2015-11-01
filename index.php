@@ -12,9 +12,9 @@
         <meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
 
 		<meta class="temp" name="description" content="ThemeBucket"/>
-		<meta class="temp" name="copyright"content="© Copyright 2015 Template-Admin">
+		<meta class="temp" name="copyright"content="© Copyright 2015 Bucket-Admin">
 		<meta class="temp" name="robots" content="index, follow">
-		<link class="temp" rel="alternate" hreflang="en" href="http://template-admin.com.mx" />
+		<link class="temp" rel="alternate" hreflang="en" href="http://bucket-admin.com.mx" />
 
 		<title>Bucket | Admin</title>
 
@@ -26,11 +26,12 @@
         <!-- Google Analytics -->
         <!-- End -> Google Analytics -->
         <!--[if lt IE 9]>
-		    <script src="lib/html5shiv.js"></script>
+        	<script src="lib/plugins/ie8-responsive-file-warning.js"></script>
+		    <script src="lib/plugins/html5shiv.js"></script>
 		<![endif]-->
 		<!--[if lt IE 10]>
-		    <script src="lib/media.match.js"></script>
-		    <script src="lib/respond.js"></script>
+		    <script src="lib/plugins/media.match.js"></script>
+		    <script src="lib/plugins/respond.js"></script>
 		<![endif]-->
         <script>
             var nav = navigator.appName;
