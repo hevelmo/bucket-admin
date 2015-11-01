@@ -66,7 +66,6 @@
 \* ------------------------------------------------------ */
     var initMethods = {
         init : function () {
-            setUpAccordion();
             dcAccordionMethod.fn_dcAccordion();
             sliScrollMethod.fn_slimScroll();
             naceScrollMethod.fn_niceScroll();
