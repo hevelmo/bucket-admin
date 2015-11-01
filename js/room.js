@@ -9,7 +9,6 @@
             initMethods.init();
         },
         load: function(bindings) {
-
         },
         unload: function(bindings) {
             section = "";

@@ -35,4 +35,11 @@ $(document).ready(function() {
 
         /*==Sidebar Toggle==*/
         $(domEl.recurrent_body).on('click', ".leftside-navigation .sub-menu > a", sidebarToggleMethod.sidebarToggle);
+
+        /*==Collapsible==*/
+        $(domEl.recurrent_body).on('click', '.widget-head', collapsibleMethod.collapsible);
+
+        /*==Panel Tools==*/
+        $(domEl.recurrent_body).on('click', '.panel .tools .fa', panelToolsMethod.panelToolsFa);
+        $(domEl.recurrent_body).on('click', '.panel .tools .fa-times', panelToolsMethod.panelToolsFaTimes);
 });

@@ -198,6 +198,26 @@
         }
     }
 /* ------------------------------------------------------ *\
+    [Methods] collapsibleMethod
+\* ------------------------------------------------------ */
+    var collapsibleMethod = {
+        collapsible : function(event) {
+            var widgetElem = $(this).children('.widget-collapse').children('i');
+
+            $(this)
+                .next('.widget-container')
+                .slideToggle('slow');
+            if ($(widgetElem).hasClass('ico-minus')) {
+                $(widgetElem).removeClass('ico-minus');
+                $(widgetElem).addClass('ico-plus');
+            } else {
+                $(widgetElem).removeClass('ico-plus');
+                $(widgetElem).addClass('ico-minus');
+            }
+            event.preventDefault();
+        }
+    }
+/* ------------------------------------------------------ *\
     [Methods] evenHastMethod
 \* ------------------------------------------------------ */
     var evenHastMethod = {
@@ -212,5 +232,23 @@
             if ($('.header').hasClass('merge-header')) {
                 $('.header').removeClass('merge-header')
             }
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] panelToolsMethod
+\* ------------------------------------------------------ */
+    var panelToolsMethod = {
+        panelToolsFa : function(event) {
+            var el = $(this).parents(".panel").children(".panel-body");
+            if ($(this).hasClass("fa-chevron-down")) {
+                $(this).removeClass("fa-chevron-down").addClass("fa-chevron-up");
+                el.slideUp(200);
+            } else {
+                $(this).removeClass("fa-chevron-up").addClass("fa-chevron-down");
+                el.slideDown(200);
+            }
+        },
+        panelToolsFaTimes : function(event) {
+            $(this).parents(".panel").parent().remove();
         }
     }
