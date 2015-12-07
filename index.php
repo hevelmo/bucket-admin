@@ -21,8 +21,8 @@
 		<!-- import css -->
         <link rel="stylesheet" href="css/import.css">
     	<!-- icon -->
-        <link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
-        <link rel="shortcut icon" href="img/icon/favicon.ico">
+        <!--<link rel="apple-touch-icon" href="img/ico/apple-touch-icon.png">-->
+        <link rel="shortcut icon" href="img/ico/bucket-admin.ico">
         <!-- Google Analytics -->
         <!-- End -> Google Analytics -->
         <!--[if lt IE 9]>
