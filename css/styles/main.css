@@ -17,6 +17,7 @@
     padding:8px 8px 8px 9px;
     color:rgba(255,255,255,1);
 }
+.btn-close-sidebar-box,
 .btn-close-sidebar-box i {
     -webkit-transition-timing-function: ease-out;
        -o-transition-timing-function: ease-out;
@@ -30,6 +31,12 @@
   /*-webkit-animation: icon-spin 2s infinite linear;
     -o-animation: icon-spin 2s infinite linear;
       animation: icon-spin 2s infinite linear;*/
+}
+.btn-close-sidebar-box:hover {
+  background-color: #ffffff;
+}
+.btn-close-sidebar-box:hover i {
+  color: #e73b33;
 }
 @-webkit-keyframes icon-spin {
   0% {
