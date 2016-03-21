@@ -121,10 +121,10 @@
             /*==Nice Scroll ==*/
             if ($.fn.niceScroll) {
                 $(".leftside-navigation").niceScroll({
-                    cursorcolor: "#1FB5AD",
+                    cursorcolor: "#e73b33",
                     cursorborder: "0px solid #fff",
                     cursorborderradius: "0px",
-                    cursorwidth: "3px"
+                    cursorwidth: "5px"
                 });
 
                 $(".leftside-navigation").getNiceScroll().resize();
@@ -160,16 +160,14 @@
 \* ------------------------------------------------------ */
     var sidebarToggleBoxMethod = {
         sidebarToggleBox : function(event) {
-            $(".leftside-navigation").niceScroll({
-                cursorcolor: "#1FB5AD",
-                cursorborder: "0px solid #fff",
-                cursorborderradius: "0px",
-                cursorwidth: "3px"
-            });
-
             $('#sidebar').toggleClass('hide-left-bar');
             if ($('#sidebar').hasClass('hide-left-bar')) {
                 $(".leftside-navigation").getNiceScroll().hide();
+                //$('.sidebar-toggle-box i').removeClass('fa-bars').addClass('fa-arrow-right');
+                $('.btn-close-sidebar-box i').removeClass('fa-chevron-left').addClass('fa-chevron-right');
+            } else {
+                //$('.sidebar-toggle-box i').addClass('fa-bars').removeClass('fa-arrow-right');
+                $('.btn-close-sidebar-box i').addClass('fa-chevron-left').removeClass('fa-chevron-right');
             }
             $(".leftside-navigation").getNiceScroll().show();
             $('#main-content').toggleClass('merge-left');

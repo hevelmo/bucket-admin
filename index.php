@@ -21,8 +21,8 @@
 		<!-- import css -->
         <link rel="stylesheet" href="css/import.css">
     	<!-- icon -->
-        <!--<link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">-->
-        <link rel="shortcut icon" href="img/ico/bucket-admin.ico">
+        <link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
+        <link rel="shortcut icon" href="img/icon/favicon.ico">
         <!-- Google Analytics -->
         <!-- End -> Google Analytics -->
         <!--[if lt IE 9]>
@@ -292,6 +292,9 @@
 			<!--sidebar start-->
 			<aside>
 				<div id="sidebar" class="nav-collapse">
+					<a class="btn-close-sidebar-box">
+						<i class="fa fa-chevron-left"></i>
+					</a>
 					<!-- sidebar menu start-->
 					<div class="leftside-navigation">
 						<ul class="sidebar-menu" id="nav-accordion">

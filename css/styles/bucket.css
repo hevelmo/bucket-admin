@@ -683,6 +683,13 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     padding:8px 8px 8px 9px;
     color:rgba(0,0,0,.3);
 }
+.sidebar-toggle-box .fa-arrow-right {
+    cursor:pointer;
+    display:inline-block;
+    font-size:15px;
+    padding:8px 8px 8px 9px;
+    color:rgba(0,0,0,.3);
+}
 .sidebar-toggle-box:hover {
     background:#F6F6F6;
 }
