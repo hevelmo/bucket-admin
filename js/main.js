@@ -29,8 +29,9 @@ $(document).ready(function() {
         EVENT CONTROL
     \* ------------------------------------------------------ */
 
-        $(domEl.recurrent_body).on('click', '.sidebar-toggle-box .fa-bars', sidebarToggleBoxMethod.sidebarToggleBox);
-        $(domEl.recurrent_body).on('click', '.toggle-right-box .fa-bars', toggleRightBoxMethod.toggleRightBox);
+        $(domEl.recurrent_body).on('click', '.sidebar-toggle-box', sidebarToggleBoxMethod.sidebarToggleBox);
+        $(domEl.recurrent_body).on('click', '.btn-close-sidebar-box', sidebarToggleBoxMethod.sidebarToggleBox);
+        $(domEl.recurrent_body).on('click', '.toggle-right-box', toggleRightBoxMethod.toggleRightBox);
         $(domEl.recurrent_body).on('click', '.header,#main-content,#sidebar', evenHastMethod.evenHas);
 
         /*==Sidebar Toggle==*/
